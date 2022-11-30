@@ -1,0 +1,5 @@
+content	zotero-more-authors				chrome/content/
+locale	zotero-more-authors	en-US		chrome/locale/en-US/
+skin	zotero-more-authors	default		chrome/skin/default/
+
+overlay	chrome://zotero/content/zoteroPane.xul	chrome://zotero-more-authors/content/overlay.xul
