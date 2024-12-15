@@ -2,7 +2,7 @@ Zotero.moreAuthors = new function ()
 {
     const AUTHORS_COLUMN_ID = 'zotero-items-column-authors';
 
-    function makeElement(tagName)
+    function makeElement( tagName )
     {
         return document.createElementNS( 'http://www.w3.org/1999/xhtml', tagName );
     }
@@ -14,7 +14,7 @@ Zotero.moreAuthors = new function ()
 
     this.init = async function ()
     {
-        Zotero.log("authors column: initialize");
+        Zotero.log( "authors column: initialize" );
 
         if ( typeof Zotero.ItemTreeView === 'undefined' )
         {
@@ -33,7 +33,7 @@ Zotero.moreAuthors = new function ()
                     {
                         for ( const field of Zotero.ItemFields.getAll() )
                         {
-                            if ( original_getID( field.id ) ) totalKnownFields++;
+                            if ( original_getID( field.id ) ) totalKnownFields ++;
                         }
                     }
                     injectedFieldId = totalKnownFields + 1;
